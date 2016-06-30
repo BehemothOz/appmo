@@ -69,7 +69,7 @@ gulp.task("css", () => {
 
 gulp.task('watch', () => {
     gulp.watch("./frontend/css/*.css", gulp.series("css"));
-    gulp.watch("./frontend/slim/*.slim", gulp.series("pug"));
+    gulp.watch("./frontend/pug/*.pug", gulp.series("pug"));
 });
 
 gulp.task('serve', () => {
