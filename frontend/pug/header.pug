@@ -1,3 +1,6 @@
+-var topmenu_left ={ "Home": "http://", "Features": "http://", "Coutdown": "http://"}
+-var topmenu_right = { "Pricing": "http://", "Testimonials": "http://", "Contact": "http://"}
+include mixins
 header.main-header
   nav.nav-bar
     div.site-logo
@@ -6,10 +9,8 @@ header.main-header
        span.logo-second-part
          |mo
     div.nav-left-wrapper
-      a(href="/") Home
-      a(href="/") Features
-      a(href="/") Coutdown
+      each i,z in topmenu_left
+        +menu(i, z)
     div.nav-right-wrapper
-      a(href="/") Pricing
-      a(href="/") Testimonials
-      a(href="/") Contact
+      each i,z in topmenu_right
+        +menu(i, z)
