@@ -1,0 +1,9 @@
+header {
+  width : 100%;
+  background-color: white;
+}
+
+nav.nav-bar {
+  lost-center: 1170px;
+  height: 5rem;
+}

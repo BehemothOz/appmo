@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const pug  = require('gulp-pug');
 const postcss = require('gulp-postcss');
 const precss = require('precss');
+const use = require('postcss-use')
 const normalize = require('postcss-normalize');
 const lost = require('lost');
 const cssnext = require('postcss-cssnext');
@@ -30,12 +31,11 @@ gulp.task("pug", () => {
 });
 
 gulp.task("css", () => {
-
     let processors = [
+        use({modules: ['postcss-normalize', 'cssnano']}),
         fontmagican({
             hosted: './public/fonts'
         }),
-        normalize(),
         precss(),
         cssnext(
             autoprefixer({
@@ -50,12 +50,7 @@ gulp.task("css", () => {
         svgfallback({
               basePath: './public/img',
               dest: './public/img',
-            })
-        // nano({
-        //     discardComments: {
-        //         removeAll: true
-        //     }
-        // })
+        })
      ];
 
     return combiner(

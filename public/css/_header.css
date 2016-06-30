@@ -1,0 +1,16 @@
+header {
+  width : 100%;
+  background-color: white;
+}
+
+nav.nav-bar {
+  display : flex;
+  flex-flow : row wrap;
+  max-width : 1170px;
+  margin-left : auto;
+  margin-right : auto;
+  height : 80px;
+  height: 5rem;
+}
+
+/*# sourceMappingURL=_header.css.map */

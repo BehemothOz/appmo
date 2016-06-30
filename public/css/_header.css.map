@@ -1,0 +1,1 @@
+{"version":3,"sources":["_header.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,wBAAwB;CACzB;;AAED;EACE,eAAoB;EAApB,qBAAoB;EAApB,mBAAoB;EAApB,mBAAoB;EAApB,oBAAoB;EACpB,cAAa;EAAb,aAAa;CACd","file":"_header.css","sourcesContent":["header {\n  width : 100%;\n  background-color: white;\n}\n\nnav.nav-bar {\n  lost-center: 1170px;\n  height: 5rem;\n}\n"],"sourceRoot":"/source/"}

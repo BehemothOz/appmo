@@ -1,2 +1,8 @@
-@lost flexbox flex
-@include header.css
+@use postcss-normalize;
+@use cssnano{
+  discardComments: {
+              removeAll: true
+           }
+};
+@lost flexbox flex;
+@import header;
