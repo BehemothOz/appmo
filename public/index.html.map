@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["doctype html\nhtml\n  head\n    title APPMO\n    meta(charset=\"utf8\")\n  body\n    include header\n"],"file":"index.html","sourceRoot":"/source/"}
