@@ -1,3 +1,4 @@
+/*@import url(https://fonts.googleapis.com/css?family=Exo);*/
 @use postcss-normalize;
 @use cssnano{
   discardComments: {
@@ -5,4 +6,24 @@
            }
 };
 @lost flexbox flex;
+@lost gutter 30px;
+@import variables;
 @import header;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/*body {
+  lost-utility: edit;
+}*/
+
+body {
+  background-color: color(grey alpha(10%));
+}

@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["mixins.pug"],"sourcesContent":["mixin menu(link, text)\n  a(href=link)\n    |#{text}\n"],"file":"mixins.html","sourceRoot":"/source/"}
+{"version":3,"names":[],"mappings":"","sources":["mixins.pug"],"sourcesContent":["mixin menu(link, text)\n  a.menu-item(href=link)\n    |#{text}\n"],"file":"mixins.html","sourceRoot":"/source/"}

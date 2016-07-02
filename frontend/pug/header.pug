@@ -1,16 +1,18 @@
--var topmenu_left ={ "Home": "http://", "Features": "http://", "Coutdown": "http://"}
--var topmenu_right = { "Pricing": "http://", "Testimonials": "http://", "Contact": "http://"}
+-var lhost = "http://localhost:3000"
+-var topmenu_left =["Home", "Features", "Coutdown"]
+-var topmenu_right = ["Pricing", "Testimonials", "Contact"]
 include mixins
 header.main-header
   nav.nav-bar
     div.site-logo
-       h1.logo-first-part
-         |APP
-       span.logo-second-part
-         |mo
+      img.logo-img(src="./img/logo-back.png")
+      h1.site-logo-text
+        |App
+        span
+          |mo
     div.nav-left-wrapper
-      each i,z in topmenu_left
-        +menu(i, z)
+      each  i in topmenu_left
+        +menu( lhost , i )
     div.nav-right-wrapper
-      each i,z in topmenu_right
-        +menu(i, z)
+      each i in topmenu_right
+        +menu( lhost, i)
