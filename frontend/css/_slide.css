@@ -1,0 +1,13 @@
+.sec-jumbotron{
+  background-image: resolve('bg_img.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center  top;
+  height: height('bg_img.jpg');
+
+    & .container{
+      lost-center: 1170px;
+    }
+    
+}
+

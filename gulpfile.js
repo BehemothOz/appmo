@@ -20,9 +20,13 @@ const combiner = require('stream-combiner2').obj;
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
+//path to files
+
+let pugPages = ["./frontend/pug/index.pug"];
+
 gulp.task("pug", () => {
     return combiner(
-        gulp.src("./frontend/pug/*.pug"),
+        gulp.src(pugPages),
         sourcemaps.init(),
         pug({pretty: true}),
         sourcemaps.write('./'),
@@ -54,7 +58,7 @@ gulp.task("css", () => {
      ];
 
     return combiner(
-        gulp.src('./frontend/css/*.css'),
+        gulp.src('./frontend/css/style.css'),
         sourcemaps.init(),
         postcss(processors),
         sourcemaps.write('./'),

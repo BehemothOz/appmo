@@ -8,7 +8,6 @@
 @lost flexbox flex;
 @lost gutter 30px;
 @import variables;
-@import header;
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -27,3 +26,6 @@ html {
 body {
   background-color: color(grey alpha(10%));
 }
+
+@import header;
+@import slide;
