@@ -1,31 +1,5 @@
-/*@import url(https://fonts.googleapis.com/css?family=Exo);*/
-@use postcss-normalize;
-@use cssnano{
-  discardComments: {
-              removeAll: true
-           }
-};
-@lost flexbox flex;
-@lost gutter 30px;
+@import prefs;
 @import variables;
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
-
-/*body {
-  lost-utility: edit;
-}*/
-
-body {
-  background-color: color(grey alpha(10%));
-}
-
+@import global;
 @import header;
 @import slide;
