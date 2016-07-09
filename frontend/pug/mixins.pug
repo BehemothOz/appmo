@@ -1,3 +1,10 @@
 mixin menu(link, text)
   a.menu-item(href=link)
     |#{text}
+
+mixin item(title, text, icon_true)
+  section.item
+    div.icons(class=icon_true)
+    div.wrap-item
+      h1.h1 #{title}
+      p.p #{text}
