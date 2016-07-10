@@ -225,5 +225,8 @@ button {
     height: 100px;
     right: 10%;
 }
-
+.features-blog {
+    background-color: #de5749;
+    color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
