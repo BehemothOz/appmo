@@ -1,5 +1,7 @@
+@use postcss-normalize;
 @import prefs;
 @import variables;
 @import global;
 @import header;
 @import slide;
+@import features;
