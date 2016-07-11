@@ -1,4 +1,8 @@
+// Colors
+$black: #000;
+$white: #fff;
+
 $menu-text-color: #919191;
 $menu-hover-color: #de5749;
-$font-exo: "Exo", sans-serif;
-$jumbo-text: #fff;
+
+$font-exo: 'Exo', sans-serif;

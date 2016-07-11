@@ -1,15 +1,16 @@
 include mixins
+
 header.main-header
   nav.nav-bar
     div.site-logo
-      img.logo-img(src="./img/logo-back.png")
-      h1.site-logo-text
-        |App
-        span
-          |mo
+      img.site-logo__img(src="./img/logo-back.png")
+      h1.site-logo__text
+        | App#[span mo]
+
     div.nav-left-wrapper
       each  i in topmenu_left
         +menu( lhost , i )
+
     div.nav-right-wrapper
       each i in topmenu_right
         +menu( lhost, i)

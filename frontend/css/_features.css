@@ -1,41 +1,42 @@
 .sec-features {
-width: 100%;
-background-color: $menu-hover-color;
-color: #fff;
-padding-top: 220px;
-.container {
+  width: 100%;
+  background-color: $menu-hover-color;
+  color: #fff;
+  padding-top: 220px;
+
+  .container {
     lost-center: 1170px;
   }
 }
 
-.sec-title {
+.sec-features__desc-wrapper {
   max-width: 787px;
   margin: 0 auto;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
 }
 
-.sec-title__title {
+.sec-features__title {
   font-size: 50px;
   line-height: 25px;
   padding-bottom: 25px;
 }
 
-.sec-title__title-sub {
+.sec-features__title-sub {
   font-size: 17px;
   line-height: 22px;
 }
 
 .sec-features__items {
   display: flex;
-  flex-wrap: wrap; 
-  padding-top: 110px;  
+  flex-wrap: wrap;
+  padding-top: 110px;
 }
 
 .sec-features__item {
   lost-column: 6/12 2;
   padding-left: 70px;
-  font-weight: 400; 
+  font-weight: 200; 
   padding-bottom: 65px;
 }
 
@@ -44,40 +45,40 @@ padding-top: 220px;
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 72px;
     height: 58px;
     background-size: 72px 58px;
     left: -25px;
-    top: -5px; 
-  } 
+    top: -5px;
+  }
 }
 
 .sec-features__item.icon.icon1::before {
-  background: inline("upload.svg") no-repeat;
+  background: inline('upload.svg') no-repeat;
 }
 
 .sec-features__item.icon.icon2::before {
-  background: inline("profile_page_left.svg") no-repeat;
+  background: inline('profile_page_left.svg') no-repeat;
 }
 
 .sec-features__item.icon.icon3::before {
-  background: inline("connect_chat.svg") no-repeat;
+  background: inline('connect_chat.svg') no-repeat;
 }
 
 .sec-features__item.icon.icon4::before {
-  background: inline("easy_settings.svg") no-repeat;
+  background: inline('easy_settings.svg') no-repeat;
 }
 
 .sec-features__item.icon.icon5::before {
-  background: inline("fast_location.svg") no-repeat;
+  background: inline('fast_location.svg') no-repeat;
 }
 
 .sec-features__item.icon.icon6::before {
-  background: inline("profile_page_right.svg") no-repeat;
+  background: inline('profile_page_right.svg') no-repeat;
 }
 
-.sec-features__item-title {  
+.sec-features__item-title {
   font-size: 33px;
   line-height: 25px;
   padding-bottom: 25px;
