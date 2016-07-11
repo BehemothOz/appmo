@@ -13,6 +13,7 @@
       lost-center: 960px;
     }
   }
+  
   &::after {
     content: '';
     background-image: inline('bc-bottom.png');
