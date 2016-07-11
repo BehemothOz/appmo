@@ -1,4 +1,4 @@
-.sec-jumbotron {
+.sec-jumbo {
   background-image: resolve('bg_img.jpg');
   background-repeat: no-repeat;
   background-position: center  top;
@@ -6,80 +6,83 @@
   height: height('bg_img.jpg');
   position: relative;
 
-  & .container {
+  .container {
     lost-center: 1170px;
 
     @media(max-width: 960px){
       lost-center: 960px;
     }
   }
-  
+
   &::after {
     content: '';
     background-image: inline('bc-bottom.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: height('bc-bottom.png');
     bottom: -106px;
-    position: absolute;    
+    position: absolute;
   }
 }
 
-.sec-jumbo__description {
-  width: 77%;
+.sec-jumbo__desc {
+  max-width: 680px;
   margin: 0 auto;
   background-color: color($menu-hover-color alpha(-45%));
-  color: $jumbo-text;
+  color: $white;
   border-radius: 10px;
   text-align: center;
   padding: 3em 11.5em;
   margin-top: 108px;
-
-  & h1 {
-    font-size: 3vw;
-     margin-bottom: 20px;
-  }
-
-  & p {
-    font-size: 1.66rem;
-  }
 }
 
-.sec-jumbo__buttons-wrapper {
+.sec-jumbo__heading {
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+
+.sec-jumbo__text {
+  font-size: 1.66rem;
+}
+
+.sec-jumbo__btns-wrapper {
   position: relative;
   width: 100%;
 }
 
-.sec-jumbo__button {
+.sec-jumbo__btn {
   position: absolute;
   top: 182px;
   cursor: pointer;
-
-  & p {
-    color: white;
-    font-family: Exo;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: center;
-  }
+  background-repeat: no-repeat;
+  background-color: transparent;
 
   &:hover {
-    background: inline('button_hover.png');
+    background-image: inline('button_hover.png');
+    background-repeat: no-repeat;
   }
 }
 
-.sec-jumbo__button_download {
-  background: resolve('button.png');
+.sec-jumbo__btn_download {
+  background-image: resolve('button.png');
   width: width('button.png');
   height: height('button.png');
   left: 10%;
 }
 
-.sec-jumbo__button_learn {
-  background: resolve('button.png');
+.sec-jumbo__btn_learn {
+  background-image: resolve('button.png');
   width: width('button.png');
   height: height('button.png');
   right: 10%;
+}
+
+.sec-jumbo__btn-text {
+  color: white;
+  font-family: Exo;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
 }

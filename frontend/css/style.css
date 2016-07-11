@@ -1,7 +1,9 @@
-@use postcss-normalize;
 @import prefs;
 @import variables;
+
+@use postcss-normalize;
 @import global;
+
 @import header;
-@import slide;
+@import jumbo;
 @import features;

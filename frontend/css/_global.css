@@ -1,31 +1,30 @@
-html { 
-  box-sizing: border-box;
-  font-size: 10px;
-}
-
 *,
-*:before,
-*:after {  
-   box-sizing: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*::before,
+*::after {
+  
 }
 
-/*body {
-  lost-utility: edit;
-}*/
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: $font-exo;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+div, section {
+  box-sizing: border-box;
+}
+
+p, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3,
+h4, h5, h6,
 p {
   margin: 0;
   padding: 0;
