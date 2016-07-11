@@ -50,7 +50,7 @@ gulp.task("css", () => {
         flexbugs(),
         svgfallback({
               basePath: './public/img',
-              dest: './public/img',
+              dest: './public/img/fallback/',
         }),
         fontmagican({
             hosted: './public/fonts'

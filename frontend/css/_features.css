@@ -3,7 +3,7 @@ width: 100%;
 background-color: $menu-hover-color;
 color: #fff;
 padding-top: 220px;
-  .container {
+.container {
     lost-center: 1170px;
   }
 }
@@ -37,6 +37,44 @@ padding-top: 220px;
   padding-left: 70px;
   font-weight: 400; 
   padding-bottom: 65px;
+}
+
+.sec-features__item.icon {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 58px;
+    background-size: 72px 58px;
+    left: -20px;
+    top: 10; 
+  } 
+}
+
+.sec-features__item.icon.icon1::before {
+  background: inline("upload.svg") no-repeat;
+}
+
+.sec-features__item.icon.icon2::before {
+  background: inline("profile_page_left.svg") no-repeat;
+}
+
+.sec-features__item.icon.icon3::before {
+  background: inline("connect_chat.svg") no-repeat;
+}
+
+.sec-features__item.icon.icon4::before {
+  background: inline("easy_settings.svg") no-repeat;
+}
+
+.sec-features__item.icon.icon5::before {
+  background: inline("fast_location.svg") no-repeat;
+}
+
+.sec-features__item.icon.icon6::before {
+  background: inline("profile_page_right.svg") no-repeat;
 }
 
 .sec-features__item-title {  
