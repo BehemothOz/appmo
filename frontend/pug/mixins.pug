@@ -3,8 +3,8 @@ mixin menu(link, text)
     |#{text}
 
 mixin item(title, text, icon_true)
-  section.item
+  section.sec-features__item
     div.icons(class=icon_true)
     div.wrap-item
-      h1.h1 #{title}
-      p.p #{text}
+      h1.sec-features__item-title #{title}
+      p.sec-features__item-text #{text}

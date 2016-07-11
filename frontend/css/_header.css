@@ -31,26 +31,28 @@
 }
 
 .menu-item {
-   display: block;
-   font-family: $font-exo;
-   text-decoration: none;
-   font-size: 1.5rem;
-   line-height: 1.27;
-   text-transform: uppercase;
-   color: $menu-text-color;
-   position: relative;
-     &::after {
-       display: none;
-       position: absolute;
-       content: "";
-       width: width("atom.png");
-       height: height("atom.png");
-       background: inline("atom.png");
-       background-size: size("atom.png");
-       top: 20px;
-       left: 50%;
-       transform: translateX(-7px);
-     }
+  display: block;
+  font-family: $font-exo;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: $menu-text-color;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: width("atom.png");
+    height: height("atom.png");
+    background: inline("atom.png");
+    background-size: size("atom.png");
+    top: 20px;
+    left: 50%;
+    transform: translateX(-7px);
+  }
  }
 
  .menu-item:hover, .menu-item:focus {
@@ -76,8 +78,8 @@
   text-transform: uppercase;
   color:$menu-hover-color;
 
-    & span {
-      font-size: 2.063rem;
-      color: $menu-text-color;
-    }
+  & span {
+    font-size: 2.063rem;
+    color: $menu-text-color;
+  }
 }

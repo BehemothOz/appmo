@@ -1,14 +1,15 @@
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+html { 
   box-sizing: border-box;
   font-size: 10px;
 }
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+
+*,
+*:before,
+*:after {  
+   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /*body {
   lost-utility: edit;
@@ -16,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  font-style: $font-exo;
+  font-family: $font-exo;
 }
 
 h1,
@@ -28,8 +29,8 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  font-weight: inherit;
 }
-
 
 button {
   border: none;

@@ -16,7 +16,7 @@
   &::after {
     content: '';
     background-image: inline('bc-bottom.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: height('bc-bottom.png');

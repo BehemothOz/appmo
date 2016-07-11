@@ -36,10 +36,7 @@ gulp.task("pug", () => {
 
 gulp.task("css", () => {
     let processors = [
-        use({modules: ['postcss-normalize', 'cssnano']}),
-        fontmagican({
-            hosted: './public/fonts'
-        }),
+        use({modules: ['postcss-normalize', 'cssnano']}),        
         precss(),
         cssnext(
             autoprefixer({
@@ -54,6 +51,9 @@ gulp.task("css", () => {
         svgfallback({
               basePath: './public/img',
               dest: './public/img',
+        }),
+        fontmagican({
+            hosted: './public/fonts'
         })
      ];
 
