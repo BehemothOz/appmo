@@ -35,3 +35,18 @@ button {
   border: none;
   outline: 0;
 }
+
+.container {
+    lost-center: 1170px;
+}
+
+.sec__title {
+  font-size: 50px;
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+.sec__title-desc {
+  font-size: 17px;
+  line-height: 22px;
+}

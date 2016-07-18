@@ -6,23 +6,16 @@
   height: height('bg_img.jpg');
   position: relative;
 
-  .container {
-    lost-center: 1170px;
-
-    @media(max-width: 960px){
-      lost-center: 960px;
-    }
-  }
-
   &::after {
     content: '';
     background-image: inline('bc-bottom.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: height('bc-bottom.png');
-    bottom: -106px;
+    height: 124px;
+    bottom: -114px;
     position: absolute;
+    background-position: center top;
   }
 }
 
