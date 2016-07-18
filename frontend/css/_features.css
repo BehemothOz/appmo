@@ -3,10 +3,6 @@
   background-color: $menu-hover-color;
   color: #fff;
   padding-top: 220px;
-
-  .container {
-    lost-center: 1170px;
-  }
 }
 
 .sec-features__desc-wrapper {
