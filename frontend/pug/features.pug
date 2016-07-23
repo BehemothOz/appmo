@@ -2,9 +2,7 @@ include mixins
 
 section.sec-features
   div.container
-    div.sec-features__desc-wrapper
-      h1.sec__title Awesome Features
-      p.sec__title-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    +sec-main-title("red", "Awesome Features")
 
     div.sec-features__items
       each x,y in sec_features__item_titles

@@ -1,0 +1,17 @@
+.sec-desc-wrapper__red {
+  max-width: 787px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.sec__title {
+  font-size: 50px;
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+.sec__title-desc {
+  font-size: 17px;
+  line-height: 22px;
+}

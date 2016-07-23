@@ -509,11 +509,20 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+.sec-desc-wrapper__red {
+    max-width: 787px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+}
+
 .sec__title {
     font-size: 50px;
     line-height: 25px;
     padding-bottom: 25px;
 }
+
 .sec__title-desc {
     font-size: 17px;
     line-height: 22px;
@@ -734,21 +743,6 @@ button {
     background-color: #de5749;
     color: #fff;
     padding-top: 220px;
-}
-.sec-features__desc-wrapper {
-    max-width: 787px;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 300;
-}
-.sec-features__title {
-    font-size: 50px;
-    line-height: 25px;
-    padding-bottom: 25px;
-}
-.sec-features__title-sub {
-    font-size: 17px;
-    line-height: 22px;
 }
 .sec-features__items {
     display: -webkit-box;

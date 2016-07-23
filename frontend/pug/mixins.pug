@@ -9,7 +9,13 @@ mixin menu(link, text)
     |#{text}
 
 mixin item(title, text, icon_class)
-  section.sec-features__item.icon(class=icon_class)    
+  section.sec-features__item.icon(class=icon_class)
     div.wrap-item
       h1.sec-features__item-title #{title}
       p.sec-features__item-text #{text}
+
+
+mixin sec-main-title(color_class, sec_name_title)
+  div(class="sec-desc-wrapper__"+color_class)
+    h1.sec__title #{sec_name_title}
+    p.sec__title-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

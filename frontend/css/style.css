@@ -4,6 +4,8 @@
 @use postcss-normalize;
 @import global;
 
+@import moduls/sec_title;
+
 @import header;
 @import jumbo;
 @import features;
